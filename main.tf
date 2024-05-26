@@ -47,7 +47,10 @@ resource "aws_iam_policy" "s3_policy" {
     {
       "Action": [
         "s3:PutObject",
+        "s3:*",
+        "s3-object-lambda:*"
         "s3:GetObject"
+
       ],
       "Effect": "Allow",
       "Resource": "${aws_s3_bucket.bucket.arn}/*"

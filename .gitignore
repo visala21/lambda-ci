@@ -1,5 +1,8 @@
 .terraform
-*.zip
-*.tfstate
-*.tfstate.backup
-main
+Jenkinsfile
+README.md
+main.go
+main.tf
+main_test.go
+schema.png
+variable.tf
